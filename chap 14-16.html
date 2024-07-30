@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- question 1 -->
+    <script>
+        document.write("<br><br>")
+        document.write("<h1>Question #1 <br></h1>")
+       
+        var studentNames = [];
+        studentNames.push("Alice");
+        studentNames.push("Bob");
+        studentNames.push("Charlie");
+        document.write(studentNames);
+    </script>
+
+    <!-- question 3 -->
+    <script>
+        document.write("<br><br>")
+        document.write("<h1>Question #3 <br></h1>")
+
+        var studentNames = ["Alice", "Bob", "Charlie", "David"];
+        document.write(studentNames[0], "<br>");
+        document.write(studentNames[1], "<br>");
+        
+        studentNames.push("Eve");
+        document.write(studentNames, "<br>");
+        
+        studentNames.pop();
+        document.write(studentNames, "<br>");
+        
+        for (var i = 0; i < studentNames.length; i++) {
+            document.write(studentNames[i], "<br>");
+        }
+    </script>
+
+    <!-- question 4 -->
+    <script>
+        document.write("<br><br>")
+        document.write("<h1>Question #4 <br></h1>")
+        var numbers = [1, 2, 3, 4, 5];
+        document.write(numbers[0], "<br>");
+        document.write(numbers[1], "<br>");
+       
+        numbers.push(6);
+        document.write(numbers, "<br>");
+        
+        numbers.pop();
+        document.write(numbers,"<br>");
+
+        for (var i = 0; i < numbers.length; i++) {
+        document.write(numbers[i], "<br>");
+        }
+        var sum = 0;
+       for (var i = 0; i < numbers.length; i++) {
+       sum += numbers[i];
+       }
+       document.write("Sum:", sum);
+
+    </script>
+
+    <!-- question 5 -->
+     <script>
+        document.write("<br><br>")
+        document.write("<h1>Question #5 <br></h1>")
+       var booleanValues = [true, false, true, false, true];
+        document.write(booleanValues[0], "<br>"); 
+       document.write(booleanValues[1], "<br>");
+
+       booleanValues.push(false);
+       document.write(booleanValues, "<br>");
+
+       booleanValues.pop();
+       document.write(booleanValues, "<br>");
+
+       for (var i = 0; i < booleanValues.length; i++) {
+       document.write(booleanValues[i], "<br>");
+      }
+     var trueCount = 0;
+for (var i = 0; i < booleanValues.length; i++) {
+    if (booleanValues[i]) {
+        trueCount++;
+    }
+}
+document.write("Number of true values:", trueCount);
+     </script>
+
+     <!-- question 6 -->
+     <script>
+        document.write("<br><br>")
+        document.write("<h1>Question #6 <br></h1>")
+        var mixedArray = [1, "Alice", true, null, { key: "value" }, [1, 2, 3]];
+        document.write(mixedArray[0],"<br>"); 
+        document.write(mixedArray[1], "<br>"); 
+        document.write(mixedArray[2], "<br>"); 
+        document.write(mixedArray[3], "<br>"); 
+        document.write(mixedArray[4], "<br>"); 
+        document.write(mixedArray[5], "<br>");
+     </script>
+
+<!-- question 7 -->
+ <script>
+    document.write("<br><br>")
+    document.write("<h1>Question #7 <br></h1>")
+ </script>
+
+<h1> Qualifications</h1>
+<ol id="qualificationsList"></ol>
+ <script>
+       
+
+        var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+         var qualificationsList = document.getElementById("qualificationsList");
+       
+        for (var i = 0; i < qualifications.length; i++) {
+            var listItem = document.createElement("li");
+            listItem.textContent = qualifications[i];
+            qualificationsList.appendChild(listItem);
+        }
+ </script>
+
+ <!-- question 8 -->
+ <script>
+    document.write("<br><br>")
+    document.write("<h1>Question #8 <br></h1>")
+ </script>
+ <h1>Student Scores and Percentages</h1>
+ <div id="studentInfo"></div>
+  <script>
+       
+        var studentNames = ["Michael", "John", "Tony"];
+        var studentscore = [320, 230, 480];
+        var totalMarks = 500;
+        
+        var studentInfoDiv = document.getElementById("studentInfo");
+        for (var i = 0; i < studentNames.length; i++) {
+            var name = studentNames[i];
+            var score = studentscore[i];
+            var percentage = (score / totalMarks) * 100;
+
+            var studentParagraph = document.createElement("p");
+            studentParagraph.textContent = "Student: " + name + ", Score: " + score + ", Percentage: " + percentage.toFixed(2) + "%";
+            studentInfoDiv.appendChild(studentParagraph);
+        }
+</script>
+<!-- question 9 -->
+<script>
+
+</script>
+<!-- question 10 -->
+ <script>
+     document.write("<br><br>")
+     document.write("<h1>Question #10 <br></h1>")
+    var scores = [320, 230, 480, 120,];
+   document.write("scores of students:", scores);
+   scores.sort();
+   document.write("<br>scores of students after sorting:", scores);
+ </script>
+  <!-- question 11 -->
+   <script>
+     document.write("<br><br>")
+     document.write("<h1>Question #11 <br></h1>")
+   
+     var cities = ['karachi','islamabad','lahore','quetta','peshawar'];
+    var selectedCities = cities.slice(1,3);
+    document.write("cities list", cities);
+    document.write("<br> selected cities:", selectedCities);
+   </script>
+
+<!-- question 11 -->
+<script>
+//    double solution
+// function copySelectedCities() {
+//     var cities = ["karachi", "islamabad", "lahore", "peshawar", "quetta", "rawalpindi"];
+//     var selectedCities = [];
+//     selectedCities = cities.slice(0, 3);
+//     console.log("Cities array:", cities);
+//     console.log("Selected Cities array:", selectedCities);
+// }
+// function main() {
+//     copySelectedCities();
+// }
+// main();
+</script>
+
+<!-- question 12 -->
+<script>
+      document.write("<br><br>")
+      document.write("<h1>Question #12 <br></h1>")
+    function createStringFromArray() {
+    var arr = ["This", " is", " my", " cat"];
+    var singleString = arr.join('');
+    document.write("Single String:", singleString);
+}
+function main() {
+    createStringFromArray();
+}
+main();
+</script>
+
+<!-- question 13 -->
+<script>
+      document.write("<br><br>")
+      document.write("<h1>Question #13 <br></h1>")
+var devices = ['keyboard', 'Mouse', 'printer','Monitor'];
+document.write(" Devices: ", devices);
+document.write("<br>Out:<br> ",devices.pop());
+document.write("<br>Out:<br> ",devices.pop());
+document.write("<br>Out:<br> ",devices.pop());
+document.write("<br>Out:<br> ",devices.pop());
+
+</script>
+
+
+<!-- question 15 -->
+<script>
+       document.write("<br><br>")
+       document.write("<h1>Question #15 <br></h1>")
+    function createDropdown() {
+            var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+            var dropdown = '<select name="manufacturers">';
+            for (var i = 0; i < manufacturers.length; i++) {
+                dropdown += '<option value="' + manufacturers[i] + '">' + manufacturers[i] + '</option>';
+            }
+            dropdown += '</select>';
+            document.write(dropdown);
+        }
+        createDropdown();
+</script>
+
+</body>
+
+</html>

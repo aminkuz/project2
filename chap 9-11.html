@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- question 1 -->
+    <script>
+          document.write("<br><br>")
+          document.write("<h1>Question #1 <br></h1>")
+        var city = prompt("please enter your city:");
+        if (city === "karachi") {
+            document.write("welcome to city of lights");
+        } else if (city !== null) {
+            document.write("welcome to " + city); 
+        }
+
+    </script>
+
+    <!-- question 2  -->
+    <script>
+         document.write("<br><br>")
+         document.write("<h1>Question #2 <br></h1>")
+        var gender = prompt("Please enter your gender (male/female):");
+        if (gender === "male") {
+            document.write("Good Morning Sir");
+        } else if (gender === "female") {
+            document.write("Good Morning Ma’am");
+        } 
+    </script>
+
+    <!-- question 3 -->
+    <script>
+         document.write("<br><br>")
+         document.write("<h1>Question #3 <br></h1>")
+       var color = prompt("Enter Traffic signal light(red,green yellow)")
+       if (color === "red") {
+        document.write("if the traffic signal is red you <b> must stopped </b>")
+       } 
+       else if(color === "green"){
+        document.write("if the traffic signal is green you <b> moved now </b>")
+       }
+       else if(color === "yellow"){
+        document.write("if the traffic signal is yellow you <b> ready to move </b>")
+       }
+       else {
+        document.write("invalid input")
+       }
+
+    </script>
+
+    <!-- question 4 -->
+    <script>
+         document.write("<br><br>")
+         document.write("<h1>Question #4 <br></h1>")
+        var remaining_fuel = prompt("Enter the remaining fuel in your car (in litres): ")
+        if (remaining_fuel < 0.25) {
+            document.write("Please refill the fuel in your car")
+        }
+        else {
+            document.write("You have {remaining_fuel} litres of fuel remaining")
+        }
+    </script>
+
+    <!-- question 5 -->
+    <script>
+         document.write("<br><br>")
+         document.write("<h1>Question #5 <br></h1>")
+        //part a
+        var a = 4;
+        if (++a === 5) {
+            alert("given condition for variable a is true");
+        }
+
+       // part b
+        var b = 82;
+        if (b++ === 83) {
+            alert("given condition for variable b is true");
+        }
+
+        //part c
+        var c = 12;
+        if (c++ === 13) {
+            alert("condition 1 is true");
+        }
+        if (c === 13) {
+            alert("condition 2 is true");
+        }
+        if (++c < 14) {
+            alert("condition 3 is true");
+        }
+        if (c === 14) {
+            alert("condition 4 is true");
+        }
+
+       // part d
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) {
+            alert("The cost equals");
+        }
+
+       // part e
+        if (true) {
+            alert("True");
+        }
+        if (false) {
+            alert("False");
+        }
+
+        //part f
+        if ("car" < "cat") {
+            alert("car is smaller than cat");
+        }
+
+    </script>
+
+    <!-- question 6 -->
+    <script>
+
+    </script>
+
+    <!-- question 7 -->
+    <!-- part a -->
+    <script>
+        document.write("<br><br>")
+        document.write("<h1>Question #7 <br></h1>")
+
+        var secret_number = 7;
+        var guess = prompt("Guess the secret number (between 1 and 10): ");
+        if (guess == secret_number) {
+            document.write("Bingo! Correct answer")
+        }
+        else {
+            document.write("wrong answer")
+        }
+    </script>
+    <!-- part b -->
+    <script>
+        // mistake
+
+        // var secret_number = +1;
+        // var guess = prompt("Guess the secret number (between 1 and 10): ");
+        // if (guess == secret_number) {
+        //     alert("Bingo! Correct answer")
+        // }
+        // else if (guess +1== secret_number){
+        //     alert("Close enough to the correct answer")
+        // }
+        // else {
+        //     alert("wrong answer")
+        // }
+    </script>
+    <!-- question 8 -->
+    <script>
+         document.write("<br><br>")
+         document.write("<h1>Question #8 <br></h1>")
+        var number = prompt("enter a number");
+        if (number % 3 == 0){
+            document.write("The number is divisible by 3.");
+        }
+
+        else{
+            document.write("The number is not divisible by 3.");
+        }
+    </script>
+
+    <!-- question 9 -->
+    <script>
+        document.write("<br><br>")
+        document.write("<h1>Question #9 <br></h1>")
+        var number = prompt("enter a number");
+        if (number % 2 == 0){
+            document.write("The number is even");
+        } else{
+          document.write("The number is odd");
+        }
+    </script>
+
+    <!-- question 10 -->
+    <!-- part a -->
+    <script>
+          document.write("<br><br>")
+          document.write("<h1>Question #10 <br></h1>")
+
+        var temperature = prompt("Enter The Temperature")
+        if (temperature > 40) {
+            document.write("It is too hot outside.");
+        } else {
+            document.write("it is too cold ")
+        }
+    </script>
+    <!-- part b -->
+    <script>
+       var temperature = prompt("Enter The Temperature")
+        if (temperature > 30) {
+            document.write("The Weather today is Normal.");
+        } else {
+            document.write("it is too cold ")
+        }
+    </script>
+    <!-- part c -->
+    <script>
+        var temperature = prompt("Enter The Temperature")
+        if (temperature > 20) {
+            document.write("today's weather is cool");
+        } else {
+            document.write("it is too cold ")
+        }
+    </script>
+    <!-- part d -->
+    <script>
+        var temperature = prompt("Enter The Temperature")
+        if (temperature > 10) {
+            document.write("OMG! Today’s weather is so Cool.")
+        } else {
+            document.write("it is too cold ")
+        }
+    </script>
+    <!-- question 11 -->
+    <script>
+       
+
+    </script>
+
+</body>
+
+
+</html>
